@@ -34,6 +34,8 @@ include:
     - managed
     - template: jinja
     - source: salt://graphite/templates/statsd/bucky.conf
+    - require:
+      - file: /srv/statsd/conf
     - watch_in:
       - service: supervisord
 
