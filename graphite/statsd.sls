@@ -27,6 +27,8 @@ include:
     - directory
     - user: statsd
     - group: statsd
+    - require:
+      - user: statsd
 
 
 /srv/statsd/conf/bucky.conf:
