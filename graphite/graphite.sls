@@ -59,6 +59,17 @@ graphite_virtualenv:
       - supervisord: supervise-graphite
 
 
+/srv/graphite/conf/storage-schemas.conf:
+  file:
+    - managed
+    - source: salt://graphite/templates/graphite/storage-schemas.conf
+    - template: jinja
+    - user: graphite
+    - group: graphite
+    - watch_in:
+      - supervisord: supervise-graphite
+
+
 /srv/graphite/conf:
   file:
     - recurse
