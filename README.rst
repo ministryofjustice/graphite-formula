@@ -2,6 +2,8 @@
 graphite
 ========
 
+**DEPRECATED** - Use https://github.com/ministryofjustice/metrics-formula instead.
+
 Install and configure graphite, collectd and statds (via bucky) and grafana
 
 .. note::
